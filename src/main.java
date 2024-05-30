@@ -8,13 +8,15 @@ public class main {
         System.out.println("Lutfen bir index girin : ");
         int index = inp.nextInt(); // index alma
         try{
-            System.out.println(ArrayIndexOutofBounds(array,index)); //exception methodu cagırma.
+            System.out.println("Girilen indeksteki deger :  ");
+            System.out.println(ArrayIndexOutOfBounds(array,index)); //exception methodu cagırma.
+
         }
         catch(Exception e){
             System.out.println("Girilen index dizinin disindadir.");
         }
     }
-    public static int ArrayIndexOutofBounds(int[] array, int index) throws Exception{
+    public static int ArrayIndexOutOfBounds(int[] array, int index) throws Exception{
         if(index <0 || index >= array.length) { //array ve index alan exception methodu.
             throw new Exception();
         }
